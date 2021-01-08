@@ -2,14 +2,13 @@
 
 #### Who will use the application?
 
-  The MangAnime application will serve people who would like to
+  The ManAnime application will serve people who would like to
   * get information about an anime or a manga,
   * rate & review animes watched or mangas read for future watchers or readers,
   * find a direct link to watch animes from an official website,
   * share their thoughts or discuss something about an anime or a manga,
-  * save what they have watched or read so far,
   * talk about the differences between an anime and its manga,
-  * save animes or mangas to their list to watch or read them in the future.
+  * save animes or mangas to their list.
   </br>        
 
 #### Why it is needed and useful?
@@ -27,7 +26,9 @@ I am planning to use JavaScript in these places;
 1. For writing comments asynchronously,
 2. For writing replies asynchronously,
 3. For submitting ratings & reviews asynchronously,
-4. For checking if any of the checkboxes are clicked
+4. For controlling if any of the checkboxes are clicked in:
+  * search page: for advanced search,
+  * rating & reviews tab: for categorizing the review.
 5. For adding or deleting a character to a manga or an anime in adding anime or manga pages,
 6. For searching for an anime or a manga asynchronously in the search page;
     - Results will change with every character entered in the search bar. 
@@ -325,7 +326,7 @@ It's available for a user when they log-in. When the user logs in the applicatio
 
 ## DATA STRUCTURE AND MODELS
 
-The database of the application will be explained in this section.
+The database of the application will be explained in this section. You can see an example of the explanation below:
 
 **Model_name** : explanation about the model.
   * attribute_name **!\*** : attribute_type 
@@ -333,7 +334,7 @@ The database of the application will be explained in this section.
   * attribute_name : attribute_type
   * attribute_name **\*** : attribute_type
 
-  the **\*** means; presence: true
+  the **\*** means; presence: true </br>
   the **\!** means; uniqueness: true
 
 **model_relationship**
@@ -348,8 +349,8 @@ belongs_to : another_model
   * avatar : string
   * avatar_url : string
 
-  ! If the avatar or avatar_url are empty, an image will be assigned by application.
-  ! If the name is empty, a name will be assigned by application.
+  ! If the avatar or avatar_url are empty, an image will be assigned by default.
+  ! If the name is empty, a name will be assigned by default.
   
   has_many: comments
   has_many: replies
@@ -436,7 +437,9 @@ has_and_belongs_to_many : content
   has_and_belongs_to_many : user
   has_and_belongs_to_many : comment
 
-## THIRD PARTY SERVICES
+## THIRD PARTY SERVICES
+
+Rails 5.1.7 will be used for this project.
 
 * kaminari gem : for paginating the results
 * bcrypt gem : for crypt the password safely
@@ -446,3 +449,4 @@ has_and_belongs_to_many : content
 * mail_form gem : for sending mails from users to the admins in contact page.
 * Bootstrap CSS library
 * Heroku : for making the application alive.
+* pg gem : for separating database from server
