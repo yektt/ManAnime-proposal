@@ -127,6 +127,10 @@ In this page, users have to enter their email and password combination correctly
 After a successful login, the application will lead the user to the home page.
 If a user is blocked, they cannot log in to the application even if the request is met. They will see a pop-up message which contains the reason why they have been blocked, a link to the contact page and another link to the rules page.
 
+! Blocked user can be unblocked later on by admins. The 'block' button, at the right top corner of the user-show page, will change to 'unblock' when an admin will block a user. Whenever admins want or realize that it was a misunderstood or a mistake, they can unblock the user via this button.
+
+! Blocked user's information, comments, replies or ratings & reviews will not be vanished unless the admin will not delete any comment, reply or review of this user.
+
 ##### Sign-up page
 In this page, users can create a new account in the application. They have to enter a valid email address and a password to sign up. The application will check if they have entered a valid email. The password field will be displayed as password input.
 After users sign up in the application, the application will lead them to their profile page. Thus, if they wish, they can edit their name or image which will be given default.
