@@ -18,7 +18,11 @@ Before starting an anime or a manga, it's good to know if it's worth to start. W
 ## Front end
 
 #### CSS
-For the CSS part of the project, I am thinking of using Bootstrap for all the pages except for the Home Page. For the home page, I will write a CSS file from scratch. I am thinking of using 'grids' and its attributes to make animes and mangas in blocks. You can check the 'views.pdf - home page' as a reference.
+For the CSS part of the project, I am thinking of using Bootstrap for all the pages except for the Home Page and two more pages. I will write CSS rules for these three pages (the home page and the other two pages) by myself excluding the header and footer.
+
+I am planning to use grids on the home page, anime list page, manga list page, anime show page, manga show page, and character show page, and all will be CSS Grids that I will write. You can see under all pages' explanation that I have mentioned above, that I will use grids in it as well.
+
+As an example of the grids; on the home page, I am thinking of using 'grids' and its attributes to make animes and mangas in blocks. You can check the 'views.pdf - home page' as a reference.
 
 #### JAVASCRIPT
 
